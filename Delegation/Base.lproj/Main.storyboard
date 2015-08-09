@@ -18,24 +18,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-dn-53K">
-                                <rect key="frame" x="236" y="28" width="129" height="32"/>
+                                <rect key="frame" x="236" y="36" width="129" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type zip code in here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-BM-PLK">
-                                <rect key="frame" x="16" y="68" width="568" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in zip code here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-BM-PLK">
+                                <rect key="frame" x="16" y="88" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="numberPad"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in USD here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-aY-zH6">
+                                <rect key="frame" x="16" y="138" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpO-ue-GJ7">
+                                <rect key="frame" x="16" y="183" width="499" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-h5-5za">
+                                <rect key="frame" x="535" y="183" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="Gnd-4F-9D2"/>
+                                    <constraint firstAttribute="height" constant="31" id="qQR-kD-p84"/>
+                                </constraints>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OpO-ue-GJ7" firstAttribute="top" secondItem="Hi6-aY-zH6" secondAttribute="bottom" constant="15" id="1CT-su-nCc"/>
+                            <constraint firstItem="LZC-h5-5za" firstAttribute="leading" secondItem="OpO-ue-GJ7" secondAttribute="trailing" constant="20" id="9Gl-87-DfZ"/>
                             <constraint firstAttribute="centerX" secondItem="ebg-dn-53K" secondAttribute="centerX" id="9SF-io-ge9"/>
+                            <constraint firstItem="OpO-ue-GJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AZO-Cb-y61"/>
                             <constraint firstItem="dvI-BM-PLK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Br4-Fd-e5D"/>
+                            <constraint firstItem="Hi6-aY-zH6" firstAttribute="top" secondItem="dvI-BM-PLK" secondAttribute="bottom" constant="20" id="Oyf-9H-neK"/>
+                            <constraint firstItem="LZC-h5-5za" firstAttribute="top" secondItem="Hi6-aY-zH6" secondAttribute="bottom" constant="15" id="P9L-za-kM0"/>
+                            <constraint firstItem="Hi6-aY-zH6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VVv-Ru-hpI"/>
+                            <constraint firstItem="Hi6-aY-zH6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="baj-Mu-NO0"/>
                             <constraint firstItem="dvI-BM-PLK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jIv-ka-5Dd"/>
-                            <constraint firstItem="ebg-dn-53K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mSR-op-aPl"/>
-                            <constraint firstItem="dvI-BM-PLK" firstAttribute="top" secondItem="ebg-dn-53K" secondAttribute="bottom" constant="8" id="tml-2d-yrY"/>
+                            <constraint firstItem="ebg-dn-53K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="mSR-op-aPl"/>
+                            <constraint firstItem="LZC-h5-5za" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mUC-y1-bQ3"/>
+                            <constraint firstItem="dvI-BM-PLK" firstAttribute="top" secondItem="ebg-dn-53K" secondAttribute="bottom" constant="20" id="tml-2d-yrY"/>
                         </constraints>
                     </view>
                 </viewController>

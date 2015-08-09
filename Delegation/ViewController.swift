@@ -8,32 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     
-    // Text fields
+    // Text field outlets
     @IBOutlet weak var zipTextfield: UITextField!
     @IBOutlet weak var cashTextfield: UITextField!
     @IBOutlet weak var lockedTextfield: UITextField!
     
-    
+    // Text field delegates
+    let zipDelegate = ZipTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
+
     // Switch
     @IBOutlet weak var lockSwitch: UISwitch!
     
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
-        
-        
+        // Wire delegates
+        self.zipTextfield.delegate = zipDelegate
+        self.cashTextfield.delegate = cashDelegate
+        self.lockedTextfield.delegate = self
         
         
     }
 
 
 
+    
+    
 
 }
 

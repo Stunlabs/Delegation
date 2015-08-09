@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63685831B775DEE00C4273C /* ZipTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63685821B775DEE00C4273C /* ZipTextFieldDelegate.swift */; };
+		C63685851B775E5000C4273C /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63685841B775E5000C4273C /* CashTextFieldDelegate.swift */; };
 		C6D256E31B7744B70054090D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D256E21B7744B70054090D /* AppDelegate.swift */; };
 		C6D256E51B7744B70054090D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D256E41B7744B70054090D /* ViewController.swift */; };
 		C6D256E81B7744B70054090D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D256E61B7744B70054090D /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C63685821B775DEE00C4273C /* ZipTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTextFieldDelegate.swift; sourceTree = "<group>"; };
+		C63685841B775E5000C4273C /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		C6D256DD1B7744B70054090D /* Delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D256E11B7744B70054090D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D256E21B7744B70054090D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		C6D257021B774F780054090D /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				C63685821B775DEE00C4273C /* ZipTextFieldDelegate.swift */,
+				C63685841B775E5000C4273C /* CashTextFieldDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D256E51B7744B70054090D /* ViewController.swift in Sources */,
+				C63685851B775E5000C4273C /* CashTextFieldDelegate.swift in Sources */,
+				C63685831B775DEE00C4273C /* ZipTextFieldDelegate.swift in Sources */,
 				C6D256E31B7744B70054090D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +427,7 @@
 				C6D256FE1B7744B70054090D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6D256FF1B7744B70054090D /* Build configuration list for PBXNativeTarget "DelegationTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				C6D257011B7744B70054090D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

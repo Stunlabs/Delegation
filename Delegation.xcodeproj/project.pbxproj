@@ -77,6 +77,7 @@
 		C6D256DF1B7744B70054090D /* Delegation */ = {
 			isa = PBXGroup;
 			children = (
+				C6D257021B774F780054090D /* Delegates */,
 				C6D256E21B7744B70054090D /* AppDelegate.swift */,
 				C6D256E41B7744B70054090D /* ViewController.swift */,
 				C6D256E61B7744B70054090D /* Main.storyboard */,
@@ -110,6 +111,13 @@
 				C6D256F71B7744B70054090D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6D257021B774F780054090D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

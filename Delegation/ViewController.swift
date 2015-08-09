@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    // Text fields
+    @IBOutlet weak var zipTextfield: UITextField!
+    @IBOutlet weak var cashTextfield: UITextField!
+    @IBOutlet weak var lockedTextfield: UITextField!
+    
+    
+    // Switch
+    @IBOutlet weak var lockSwitch: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -26,12 +26,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in zip code here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-BM-PLK">
                                 <rect key="frame" x="16" y="88" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in USD here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-aY-zH6">
                                 <rect key="frame" x="16" y="138" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpO-ue-GJ7">
                                 <rect key="frame" x="16" y="183" width="499" height="30"/>
@@ -63,6 +63,12 @@
                             <constraint firstItem="dvI-BM-PLK" firstAttribute="top" secondItem="ebg-dn-53K" secondAttribute="bottom" constant="20" id="tml-2d-yrY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cashTextfield" destination="Hi6-aY-zH6" id="F1f-sx-gx7"/>
+                        <outlet property="lockSwitch" destination="LZC-h5-5za" id="JLm-vh-VCm"/>
+                        <outlet property="lockedTextfield" destination="OpO-ue-GJ7" id="Ro3-5t-1pC"/>
+                        <outlet property="zipTextfield" destination="dvI-BM-PLK" id="hST-cn-YD1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

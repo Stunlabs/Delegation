@@ -81,10 +81,10 @@
 		C6D256DF1B7744B70054090D /* Delegation */ = {
 			isa = PBXGroup;
 			children = (
-				C6D257021B774F780054090D /* Delegates */,
 				C6D256E21B7744B70054090D /* AppDelegate.swift */,
 				C6D256E41B7744B70054090D /* ViewController.swift */,
 				C6D256E61B7744B70054090D /* Main.storyboard */,
+				C6D257021B774F780054090D /* Delegates */,
 				C6D256E91B7744B70054090D /* Images.xcassets */,
 				C6D256EB1B7744B70054090D /* LaunchScreen.xib */,
 				C6D256E01B7744B70054090D /* Supporting Files */,
@@ -361,6 +361,7 @@
 				INFOPLIST_FILE = Delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -371,6 +372,7 @@
 				INFOPLIST_FILE = Delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -23,10 +23,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Switch
     @IBOutlet weak var lockSwitch: UISwitch!
     
+    // Label to show results
+    @IBOutlet weak var resultLbl: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        lockSwitch.onTintColor = UIColor.redColor()
         
         
         
@@ -36,10 +41,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.lockedTextfield.delegate = self
         
         
+        
+        
+        
     }
 
 
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        var isLocked: Bool
 
+        if lockSwitch.on {
+            isLocked = false
+        } else {
+            isLocked = true
+        }
+
+        return isLocked
+    }
+    
+    
+    
+    
+    
+    
     
     
 
